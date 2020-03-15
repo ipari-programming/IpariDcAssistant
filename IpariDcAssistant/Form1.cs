@@ -35,6 +35,8 @@ namespace IpariDcAssistant
 
         private void tbStudent_TextChanged(object sender, EventArgs e)
         {
+            if (tbStudent.Text.Length < 3) return;
+
             List<Student> ans;
             try
             {

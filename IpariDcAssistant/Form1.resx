@@ -125,6 +125,8 @@ Hogy a Discord szerveren könnyebben átláthassuk a sok embert.
 Verzió: 1.2
 
 1.2:
+- keresőben minimum 3 karakter kell kereséshez
+- ez a verzió új csv fájllal érkezett
 - design változások
 - a programot nem lehet 0x0-ra kicsinyíteni
 - kis és nagy betű nem számít a keresőben
