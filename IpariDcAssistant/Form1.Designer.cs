@@ -28,254 +28,156 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.lbSearch = new System.Windows.Forms.ListBox();
-            this.cbSearch = new System.Windows.Forms.ComboBox();
-            this.numSearch = new System.Windows.Forms.NumericUpDown();
-            this.lblSearch1 = new System.Windows.Forms.Label();
-            this.lblSearch2 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btnAll = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tbStudent = new System.Windows.Forms.TextBox();
-            this.lblStudent = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numSearch)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
+            this.panelServers = new System.Windows.Forms.Panel();
+            this.lbRooms = new System.Windows.Forms.ListBox();
+            this.tbInput = new System.Windows.Forms.TextBox();
+            this.tbOutput = new System.Windows.Forms.TextBox();
+            this.panelRooms = new System.Windows.Forms.Panel();
+            this.lblServerName = new System.Windows.Forms.Label();
+            this.circleIpari = new IpariDcAssistant.Circle();
+            this.circleCsáki = new IpariDcAssistant.Circle();
+            this.panelServers.SuspendLayout();
+            this.panelRooms.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lbSearch
+            // panelServers
             // 
-            this.lbSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panelServers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
+            this.panelServers.Controls.Add(this.circleIpari);
+            this.panelServers.Controls.Add(this.circleCsáki);
+            this.panelServers.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelServers.Location = new System.Drawing.Point(0, 0);
+            this.panelServers.Name = "panelServers";
+            this.panelServers.Size = new System.Drawing.Size(76, 461);
+            this.panelServers.TabIndex = 6;
+            // 
+            // lbRooms
+            // 
+            this.lbRooms.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.lbSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lbSearch.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbSearch.FormattingEnabled = true;
-            this.lbSearch.ItemHeight = 20;
-            this.lbSearch.Location = new System.Drawing.Point(9, 71);
-            this.lbSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.lbSearch.Name = "lbSearch";
-            this.lbSearch.Size = new System.Drawing.Size(454, 140);
-            this.lbSearch.TabIndex = 0;
+            this.lbRooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(37)))), ((int)(((byte)(43)))));
+            this.lbRooms.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbRooms.ForeColor = System.Drawing.Color.Silver;
+            this.lbRooms.FormattingEnabled = true;
+            this.lbRooms.ItemHeight = 20;
+            this.lbRooms.Location = new System.Drawing.Point(16, 54);
+            this.lbRooms.Margin = new System.Windows.Forms.Padding(16);
+            this.lbRooms.Name = "lbRooms";
+            this.lbRooms.Size = new System.Drawing.Size(168, 400);
+            this.lbRooms.TabIndex = 7;
+            this.lbRooms.SelectedIndexChanged += new System.EventHandler(this.lbRooms_SelectedIndexChanged);
             // 
-            // cbSearch
+            // tbInput
             // 
-            this.cbSearch.BackColor = System.Drawing.Color.Black;
-            this.cbSearch.ForeColor = System.Drawing.Color.White;
-            this.cbSearch.FormattingEnabled = true;
-            this.cbSearch.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "Ny"});
-            this.cbSearch.Location = new System.Drawing.Point(108, 29);
-            this.cbSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cbSearch.Name = "cbSearch";
-            this.cbSearch.Size = new System.Drawing.Size(80, 28);
-            this.cbSearch.TabIndex = 1;
-            this.cbSearch.SelectedIndexChanged += new System.EventHandler(this.Search);
+            this.tbInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(62)))), ((int)(((byte)(68)))));
+            this.tbInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbInput.ForeColor = System.Drawing.Color.White;
+            this.tbInput.Location = new System.Drawing.Point(282, 409);
+            this.tbInput.Multiline = true;
+            this.tbInput.Name = "tbInput";
+            this.tbInput.Size = new System.Drawing.Size(490, 40);
+            this.tbInput.TabIndex = 8;
+            this.tbInput.TextChanged += new System.EventHandler(this.tbInput_TextChanged);
             // 
-            // numSearch
+            // tbOutput
             // 
-            this.numSearch.BackColor = System.Drawing.Color.Black;
-            this.numSearch.ForeColor = System.Drawing.Color.White;
-            this.numSearch.Location = new System.Drawing.Point(9, 31);
-            this.numSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.numSearch.Maximum = new decimal(new int[] {
-            13,
-            0,
-            0,
-            0});
-            this.numSearch.Minimum = new decimal(new int[] {
-            9,
-            0,
-            0,
-            0});
-            this.numSearch.Name = "numSearch";
-            this.numSearch.Size = new System.Drawing.Size(90, 26);
-            this.numSearch.TabIndex = 2;
-            this.numSearch.Value = new decimal(new int[] {
-            9,
-            0,
-            0,
-            0});
-            this.numSearch.ValueChanged += new System.EventHandler(this.Search);
+            this.tbOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(48)))));
+            this.tbOutput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbOutput.ForeColor = System.Drawing.Color.Silver;
+            this.tbOutput.Location = new System.Drawing.Point(295, 25);
+            this.tbOutput.Margin = new System.Windows.Forms.Padding(16, 16, 0, 0);
+            this.tbOutput.Multiline = true;
+            this.tbOutput.Name = "tbOutput";
+            this.tbOutput.ReadOnly = true;
+            this.tbOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbOutput.Size = new System.Drawing.Size(477, 381);
+            this.tbOutput.TabIndex = 9;
             // 
-            // lblSearch1
+            // panelRooms
             // 
-            this.lblSearch1.AutoSize = true;
-            this.lblSearch1.Location = new System.Drawing.Point(8, 5);
-            this.lblSearch1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblSearch1.Name = "lblSearch1";
-            this.lblSearch1.Size = new System.Drawing.Size(73, 20);
-            this.lblSearch1.TabIndex = 3;
-            this.lblSearch1.Text = "Évfolyam";
+            this.panelRooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(37)))), ((int)(((byte)(43)))));
+            this.panelRooms.Controls.Add(this.lblServerName);
+            this.panelRooms.Controls.Add(this.lbRooms);
+            this.panelRooms.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelRooms.Location = new System.Drawing.Point(76, 0);
+            this.panelRooms.Name = "panelRooms";
+            this.panelRooms.Size = new System.Drawing.Size(200, 461);
+            this.panelRooms.TabIndex = 10;
             // 
-            // lblSearch2
+            // lblServerName
             // 
-            this.lblSearch2.AutoSize = true;
-            this.lblSearch2.Location = new System.Drawing.Point(104, 5);
-            this.lblSearch2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblSearch2.Name = "lblSearch2";
-            this.lblSearch2.Size = new System.Drawing.Size(45, 20);
-            this.lblSearch2.TabIndex = 4;
-            this.lblSearch2.Text = "Szak";
+            this.lblServerName.AutoSize = true;
+            this.lblServerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblServerName.Location = new System.Drawing.Point(6, 18);
+            this.lblServerName.Name = "lblServerName";
+            this.lblServerName.Size = new System.Drawing.Size(192, 20);
+            this.lblServerName.TabIndex = 8;
+            this.lblServerName.Text = "Kattints az egyik körre!";
             // 
-            // tabControl1
+            // circleIpari
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(784, 461);
-            this.tabControl1.TabIndex = 5;
+            this.circleIpari.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.circleIpari.ForeColor = System.Drawing.Color.Chocolate;
+            this.circleIpari.Location = new System.Drawing.Point(8, 84);
+            this.circleIpari.Margin = new System.Windows.Forms.Padding(8);
+            this.circleIpari.Name = "circleIpari";
+            this.circleIpari.Size = new System.Drawing.Size(60, 60);
+            this.circleIpari.TabIndex = 1;
+            this.circleIpari.Text = " I";
+            this.circleIpari.Click += new System.EventHandler(this.circleIpari_Click);
             // 
-            // tabPage1
+            // circleCsáki
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabPage1.Controls.Add(this.btnAll);
-            this.tabPage1.Controls.Add(this.lblSearch1);
-            this.tabPage1.Controls.Add(this.lbSearch);
-            this.tabPage1.Controls.Add(this.lblSearch2);
-            this.tabPage1.Controls.Add(this.cbSearch);
-            this.tabPage1.Controls.Add(this.numSearch);
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage1.Size = new System.Drawing.Size(476, 228);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Osztályok";
-            // 
-            // btnAll
-            // 
-            this.btnAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAll.Location = new System.Drawing.Point(196, 10);
-            this.btnAll.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnAll.Name = "btnAll";
-            this.btnAll.Size = new System.Drawing.Size(112, 47);
-            this.btnAll.TabIndex = 5;
-            this.btnAll.Text = "Összes diák";
-            this.btnAll.UseVisualStyleBackColor = true;
-            this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabPage2.Controls.Add(this.tbStudent);
-            this.tabPage2.Controls.Add(this.lblStudent);
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage2.Size = new System.Drawing.Size(776, 428);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Diákok";
-            // 
-            // tbStudent
-            // 
-            this.tbStudent.BackColor = System.Drawing.Color.Black;
-            this.tbStudent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbStudent.ForeColor = System.Drawing.Color.White;
-            this.tbStudent.Location = new System.Drawing.Point(9, 9);
-            this.tbStudent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tbStudent.Name = "tbStudent";
-            this.tbStudent.Size = new System.Drawing.Size(200, 26);
-            this.tbStudent.TabIndex = 0;
-            this.tbStudent.TextChanged += new System.EventHandler(this.tbStudent_TextChanged);
-            // 
-            // lblStudent
-            // 
-            this.lblStudent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblStudent.Location = new System.Drawing.Point(4, 5);
-            this.lblStudent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblStudent.Name = "lblStudent";
-            this.lblStudent.Size = new System.Drawing.Size(768, 418);
-            this.lblStudent.TabIndex = 1;
-            this.lblStudent.Text = "Kezdj el írni egy nevet!";
-            this.lblStudent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tabPage3.Controls.Add(this.textBox1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(776, 428);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Infó";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(3, 3);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(770, 422);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
+            this.circleCsáki.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.circleCsáki.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.circleCsáki.Location = new System.Drawing.Point(8, 8);
+            this.circleCsáki.Margin = new System.Windows.Forms.Padding(8);
+            this.circleCsáki.Name = "circleCsáki";
+            this.circleCsáki.Size = new System.Drawing.Size(60, 60);
+            this.circleCsáki.TabIndex = 0;
+            this.circleCsáki.Text = "C";
+            this.circleCsáki.Click += new System.EventHandler(this.circleCsáki_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(784, 461);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.panelRooms);
+            this.Controls.Add(this.tbInput);
+            this.Controls.Add(this.panelServers);
+            this.Controls.Add(this.tbOutput);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MinimumSize = new System.Drawing.Size(500, 300);
             this.Name = "Form1";
+            this.ShowIcon = false;
             this.Text = "Ipari Dc Assistant";
-            ((System.ComponentModel.ISupportInitialize)(this.numSearch)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
+            this.panelServers.ResumeLayout(false);
+            this.panelRooms.ResumeLayout(false);
+            this.panelRooms.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox lbSearch;
-        private System.Windows.Forms.ComboBox cbSearch;
-        private System.Windows.Forms.NumericUpDown numSearch;
-        private System.Windows.Forms.Label lblSearch1;
-        private System.Windows.Forms.Label lblSearch2;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Button btnAll;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox tbStudent;
-        private System.Windows.Forms.Label lblStudent;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panelServers;
+        private Circle circleCsáki;
+        private Circle circleIpari;
+        private System.Windows.Forms.ListBox lbRooms;
+        private System.Windows.Forms.TextBox tbInput;
+        private System.Windows.Forms.TextBox tbOutput;
+        private System.Windows.Forms.Panel panelRooms;
+        private System.Windows.Forms.Label lblServerName;
     }
 }
 
